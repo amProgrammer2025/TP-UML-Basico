@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>170</x><y>400</y><w>210</w><h>190</h></coordinates><panel_attributes>Conductor
+--
+-nombre: String
+-licencia: String
+--
++Conductor(String)
++getVehiculo(): Vehiculo
++setVehiculo(Vehiculo): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>100</y><w>210</w><h>190</h></coordinates><panel_attributes>Vehiculo
+--
+-patente: String
+-modelo: String
+--
++Vehiculo(String, String, Motor)
++getConductor(): Conductor
++setConductor(Conductor): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>90</y><w>210</w><h>200</h></coordinates><panel_attributes>Motor
+--
+-tipo: String
+-numeroSerie: long
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>180</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+-motor</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>280</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+r1=-vehiculo
+r2=-conductor</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element></diagram>
